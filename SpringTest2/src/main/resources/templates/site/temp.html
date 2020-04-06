@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<link rel="stylesheet" th:href="@{/resources/css/bootstrap.min.css}">
+<link rel="stylesheet" th:href="@{/resources/css/font-awesome.min.css}">
+<script th:src="@{/resources/js/jquery.min.js}"></script>
+<script th:src="@{/resources/js/popper.min.js}"></script>
+<script th:src="@{/resources/js/bootstrap.min.js}"></script>
+
+<head>
+<meta charset="UTF-8">
+<title layout:title-pattern="$LAYOUT_TITLE | $CONTENT_TITLE">Sample Test</title>
+</head>
+<body>
+		<nav class="navbar navbar-expend navbar-dark bg-dark">
+		<a th:href="@{/}" class="navbar-brand"><i class="fa fa.home"></i>Hello Hola Spring</a>
+		</nav>
+</body>
+</html>
