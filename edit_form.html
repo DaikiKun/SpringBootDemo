@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Sign Up</title>
+</head>
+<body>
+	<div align="center">
+		<h1><u>Edit Form</u></h1><br/>
+		<form action="#" th:action="@{/save}" th:object="${crud}" method="post">
+			<table border="0" cellpadding="10">
+			<tr>
+					<td>User ID:</td>
+					<td><input type="text" th:field	="*{id}" readonly="readonly"/></td>
+				</tr>
+				<tr>
+					<td>Username:</td>
+					<td><input type="text" th:field	="*{name}"/></td>
+				</tr>
+				<tr>
+					<td>Password:</td>
+					<td><input type="text" th:field	="*{password}"/></td>
+				</tr>
+				<tr>
+					<td colspan="2"><button type="submit">Save</button></td>
+					
+				</tr>
+			</table>
+		</form>
+	</div>
+	
+
+</body>
+</html>
